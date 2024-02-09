@@ -4,11 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <script src="./main.js" defer></script>
 </head>
 <body>
-    <div class="image"></div>
-    <div class="form"></div>
+
+    <div class="page">
+        <a href="" class="home-link"><img class="image-logo" src="./img/logo-modified.png" alt=""></a>
+
+        <div class="image-left">
+        </div>
+        <div class="content-right">
+            <div class="content-display-text">
+                <div class="content-title">Service Brand</div>
+                <p class="content-paragraph">This is not a real online service! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur minima nemo earum ullam dignissimos deleniti totam ab dolore eligendi.</p>
+                <p class="content-paragraph">You <em>know</em> you want to</p>
+            </div>
+            <div class="content-form">
+                <form action="" method="post" class="create-acc-form">
+                    <p class="form-title">Lets do this!</p>
+                    <span class="required-msg">Required fields marked by *</span>
+                    <section>
+                        <div>
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" id="fname" name="fname" placeholder=" " class="field">
+                        </div>
+
+                        <div>
+                            <label for="lname">LASTNAME</label>
+                            <input type="text" id="lname" name="lname" class="field">
+                        </div>
+
+                        <div>
+                            <label for="email">EMAIL <small>*</small> </label>
+                            <input type="email" id="email" name="email" class="field" required>
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER <small>*</small> </label>
+                            <div class="phone-div">
+                                <select name="phone-code" id="phone-code">
+                                    <option value="64">+64</option>
+                                    <option value="51">+51</option>
+                                    <option value="07">+07</option>
+                                </select>
+                                <input type="tel" pattern="[0-9]{2}[0-9]{3}[0-9]{4}" id="phone" name="phone" placeholder="123457890" class="field" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="pwd">PASSWORD <small>*</small> </label>
+                            <input type="password" id="pwd" name="pwd" minlength="6" maxlength="16" required>
+                        </div>
+
+                        <div>
+                            <label for="pwd-confirm">CONFIRM PASSWORD <small>*</small><span class="error-msg"></span></label>
+                            <input type="password" id="pwd-confirm" name="pwd-confirm" minlength="6" maxlength="16" required>
+                        </div>
+                    </section>
+                    <div class="form-buttons">
+                        <button type="submit">Create Account</button>
+                        <div class="alternate-button">Already have an account? <a href="">Log in</a></div>
+                    </div>  
+                </form>
+            </div>
+        </div>
+    </div>
+ 
 </body>
 </html>
